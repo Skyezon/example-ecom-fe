@@ -1,0 +1,977 @@
+@font-face {
+    font-family: "WeblySleek UI Light";
+    src: url("weblysleekuil.eot?") format("eot"), url("weblysleekuil.woff") format("woff"), url("weblysleekuil.ttf") format("truetype"), url("weblysleekuil.svg#WeblySleekUILight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WeblySleek UI Semibold";
+    src: url("weblysleekuisb.eot?") format("eot"), url("weblysleekuisb.woff") format("woff"), url("weblysleekuisb.ttf") format("truetype"), url("weblysleekuisb.svg#WeblySleekUISemibold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #4DB46B;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0.3rem;
+    align-items: center;
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+}
+
+.search{
+    display: flex;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: #f2f2f2;
+}
+
+.icon {
+    background-color: #C04365;
+}
+
+#search-box {
+    margin-bottom: 10px;
+    width: 30rem;
+    height: 2.2rem;
+    border: 0.1rem solid #C04365;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    padding-left: 1rem;
+}
+
+#search-icon {
+    width: 1.4rem;
+    height: 1.7rem;
+    padding: 0.45rem 1.5rem;
+    margin-bottom: 0.6rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    padding: 5px 5px;
+}
+
+.cart-icon {
+    background-color: #C04365;
+    height: 100%;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cart-icon>img {
+    width: 25px;
+    height: 25px;
+}
+
+.text-navbar {
+    font-family: 'Arial Rounded MT';
+    color: white;
+    align-self: center;
+    font-size: 1.4rem;
+}
+
+#navbar-register {
+    background-color: #C04365;
+    padding: 0.7rem;
+    border-radius: 0.25rem;
+}
+
+.atas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.kanan{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+.carosel {
+    width: 44rem;
+    height: auto;
+    margin: 2rem 0rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    /* float: left; */
+    align-self: center;
+}
+
+.carosel-item {
+    height: 21.5rem;
+    width: 44rem;
+}
+
+
+.token {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 2rem 0rem;
+    font-family: 'WeblySleek UI Semibold';
+    width: 35rem;
+    height: auto;
+    border-radius: 0.75rem;
+    -webkit-box-shadow: 0 0 0.75rem black;
+}
+
+.nav-token {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #4DB46B;
+    height: 4rem;
+    width: 35rem;
+    font-family: 'WeblySleek UI Semibold';
+    margin-right: 0rem;
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+}
+
+.nav-token-icon-tulisan {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 1rem;
+    flex-flow: row nowrap;
+}
+
+.nav-token-icon-tulisan>img {
+    width: 21.9px;
+    height: 35.97px;
+    display: flex;
+    padding: opx;
+}
+
+.text-token {
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+
+}
+
+#buttonsetting {
+    display: flex;
+    width: 6.65px;
+    height: 33.26px;
+    flex-wrap: wrap;
+}
+
+#pulsa {
+    background-color: #C04365;
+    border-radius: 2rem;
+}
+
+.token-body {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem;
+}
+
+.radio-button{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    visibility: hidden;
+    /* margin: 0px 1.3rem; */
+}
+
+.radio-button-option{
+    margin: 5px 0.3rem;
+}
+
+.token-body-text {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0.3rem 2rem;
+
+}
+
+.token-body-head {
+    padding-right: 8.78rem;
+
+}
+
+.token-body-input {
+    display: flex;
+    margin-right: 2.7rem;
+    width: 10rem;
+    border: 0.05rem solid black;
+    padding: 0.0rem 1rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* dropdown 5 10 20 50 100 */
+/* tombol category ada shadow juga RIP*/
+
+.dropdown {
+    border: 0.05rem solid black;
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.harga {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.harga-text{
+margin: 0px 0.5rem;
+    padding: 0px 0.2rem;
+}
+
+#text-harga{
+    margin-left: 1rem;
+}
+
+.harga-aligner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.harga-value {
+    margin-left: 0rem;
+    /* padding: 0px 1rem; */
+}
+
+/* .aligner{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.token-button {
+    background-color: #C04365;
+    margin: 0rem 0rem;
+    display: flex;
+    width: 4rem;
+    height: 1.7rem;
+    color: white;
+    border-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-container {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #4DB46B;
+    border-radius: 0.75rem;
+    padding: 0.6rem;
+    margin: 0rem 0rem;
+    font-family: 'WeblySleek UI Semibold';
+    width: 34rem;
+    height: 6rem;
+}
+
+.popular-head {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: white;
+    margin: 0.5rem 0rem;
+    padding: 0rem 1rem;
+    align-items: center;
+}
+
+.popular-head-button {
+    background-color: #C04365;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+}
+
+.popular-body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 0.3rem 0rem;
+}
+
+.popular-body-button {
+    background-color: white;
+    padding: 0.6rem 1.0rem;
+    border-radius: 1.25rem;
+    margin: 0rem 0.1rem;
+    font-size: 1rem;
+}
+
+.popular-body-button:hover {
+    border: 0.1rem solid #C04365;
+    cursor: pointer;
+    /* padding: 0.5rem; */
+}
+
+.category-container {
+    background-color: #4DB46B;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem;
+    height: 3.9rem;
+    font-size: 13.5px;
+    margin-left: 2rem;
+    font-family: 'WeblySleek UI Semibold';
+
+}
+
+
+
+.category-normal {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 2rem;
+    align-content: center;
+    word-wrap: none;
+}
+
+.category-head {
+    color: white;
+    font-family: 'Arial Rounded MT';
+    align-self: center;
+    font-size: 1rem;
+}
+
+.category-button {
+    background-color: white;
+    padding: 0.7rem;
+    margin: 1rem;
+    margin-left: 2.5rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0 0.3rem black;
+}
+
+.category-image {
+    width: 1.3rem;
+    height: auto;
+}
+
+.category-view {
+    color: white;
+    font-family: 'Arial Rounded MT';
+    background-color: #C04365;
+    padding: 1.45rem;
+}
+
+.category-text {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 0.5rem;
+}
+
+#img-hp {
+    height: 30px;
+}
+
+.heading-barang {
+    font-family: 'Arial Rounded MT';
+    margin: 5.6rem;
+    font-size: 1.5rem;
+
+}
+
+
+.img-star {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.1rem;
+    margin-right: 0.5rem;
+}
+
+.carosel-benda {
+    margin: 2rem 6rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.kartu-container {
+    border: 0.1rem solid black;
+    border-radius: 0.25rem;
+    font-family: 'WeblySleek UI Semibold';
+    display: flex;
+    flex-flow: column wrap;
+    width: 12.625rem;
+    height: 20.875rem;
+    margin: 0px 1rem;
+    background-color: white;
+}
+
+.kartu-img {
+    width: inherit;
+    height: auto;
+    padding: 0.01rem;
+    display: flex;
+}
+
+.kartu-harga {
+    color: #C04365;
+    display: flex;
+}
+
+.kartu-store {
+    display: flex;
+}
+
+.kartu-judul {
+    display: flex;
+}
+
+.kartu-desc {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0.4rem;
+    height: 9.5rem;
+    width: initial;
+    justify-content: space-between;
+    padding: 0.2rem 0.5rem;
+
+}
+
+.kartu-desc-down {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+
+.kartu-star {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.recomendation-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 0rem;
+    height: auto;
+    justify-content: center;
+}
+
+#recomendation-kartu{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+}
+
+#last{
+    font-family: 'Arial Rounded MT';
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #4DB46B;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-family: 'WeblySleek Ui SemiBold';
+    margin: 0rem;
+    padding: 1rem 2rem;
+    color: #707070;
+    border-top: 0.1rem solid #707070;
+}
+
+.footer > div{
+    display:  flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.footer> div > div > span{
+    margin: 0px 1rem;
+}
+
+
+.ikuti-gambar > img{
+    width: 30px;
+    height: auto;
+    margin: 0px;
+}
+
+.all-category-container{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    
+    /* height: 10rem; */
+    /* justify-content: space-around; */
+}
+
+.heading-category{
+    font-size: 1.3rem;
+    padding:  0rem 3rem;
+    font-family: 'WeblySleek UI Semibold';
+}  
+
+.category-carosel{
+    display: flex;
+    padding: 0px 1rem;
+    margin: 0.2rem 1rem;
+}
+
+.category-carosel-item{
+    display: flex;
+    margin: 0rem 1rem;
+    text-align: center;
+}
+
+.category-carosel-item-button{
+    display: flex;
+    height: 1rem;
+    width: auto;
+    margin: 1rem 0rem;
+    align-items: center;
+    font-family: 'WeblySleek UI Semibold';   
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0 0.2rem black;
+    padding: 1rem;
+    flex-flow: row nowrap;
+    font-size: 0.85rem;
+    color: black;
+    justify-content: space-around;
+}
+
+#categorypage-heading{
+    color: black;
+    font-size:  1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.category-change{
+    background-color: white;
+}
+
+.carosel-pilihan{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 3rem;
+    padding: 1rem 3rem;
+    justify-content: center;
+    /* background-color: #4DB46B; */
+    flex-flow: row nowrap;
+}
+
+.carosel-pilihan-button{
+    background-color: white;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    display: flex;
+    text-align: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-family: 'WeblySleek UI Semibold';
+    /* width: auto; */
+    /* height: auto; */
+}
+
+.carosel-background{
+    background-color: #4DB46B;
+    margin: 0rem 5rem;
+    border-radius: 1rem;
+}
+
+.barang-change{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center
+}
+
+.pembayaran-container{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem 3rem;
+    justify-content: space-between;
+    font-family: 'WeblySleek UI Semibold';
+}
+
+.pembayaran-left{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.alamat-pengiriman-container{
+    background-color: white;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+
+.alamat-pengiriman-heading{
+    color: #4DB46B;
+    font-family: 'WeblySleek UI Semibold';
+    font-size: 1.5rem;
+    margin: 0.7rem;
+}
+
+.alamat-pengiriman-body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.alamat-pengiriman-body-left{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0rem;
+}
+
+.alamat-pengiriman-dropdown{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0.5rem 0.7rem;
+}
+
+.alamat-pengiriman-dropdown > label{
+    margin : 0.5rem 0rem;
+    font-size: 0.855rem;
+    display: flex;
+}
+
+.alamat-pengiriman-dropdown > input, select{
+    padding: 0.5rem 0.5rem;
+    width: 22rem;
+    display: flex;
+}
+
+.alamat-pengiriman-dropdown > input{
+    width: 20.8rem;
+}
+
+#alamat-textarea{
+    resize: none;
+    height: 5rem;
+    padding: 0.5    rem;
+}
+
+.alamat-pengiriman-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    margin: 0.7rem;
+}
+
+.alamat-pengiriman-tombol{
+    padding: 0.7rem;
+    background-color: #C04365;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#total-heading{
+    margin: 1rem -1px;
+}
+
+.pembayaran-right{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    height: inherit;
+    padding: 0px 2rem;
+    width: 25vw;
+    height: 20rem;
+    margin: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+}
+
+#kode-voucher{
+    font-size: 0.8rem;
+    color: #707070;
+    margin: 1rem 0rem;
+}
+
+.total-semua{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.total-semua > div{
+    padding: 0.3rem 0rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.garis{
+    width: 100%;
+    color: black;
+}
+
+.total{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.total-text{
+    color: black;
+}
+
+.total-angka{
+    color: #C04365;
+}
+
+.total-button{
+    display: flex;
+    justify-content: center;
+    background-color: #C04365;
+    color: white;
+    padding: 0.5rem;
+}
+
+#detail{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.detail-abu{
+    margin: 0.75rem;
+    color: #707070;
+}
+
+.detail-jumlah{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem;
+}
+
+.detail-jumlah-text{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    font-size: 1.1rem;
+}
+
+.detail-jumlah-kanan{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0rem 2rem;
+    justify-content: space-around;
+}
+
+.detail-jumlah-img > img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.detail-jumlah-angka{
+    display: flex;
+    /* height: 1rem; */
+    border: 1px solid black;
+    width: 7rem;
+    /* padding: 0.3rem; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detail-jumlah-angka > *{
+    /* height: 1rem; */
+    display: flex;
+}
+
+.detail-jumlah-angka > span > img{
+    width: 1rem;
+    height: 1.3rem;
+    padding: 0.2rem 0.1px;
+}
+
+#plus, #minus{
+    cursor: pointer;
+}
+
+#plus > img{
+    border-left: 1px solid black;
+    padding-left: 0.7rem;
+}
+
+#minus > img{
+    border-right: 1px solid black;
+    padding-right: 0.7rem;
+}
+
+.catatan-penjual{
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: space-around; */
+}
+
+.catatan-penjual > *{
+    margin: 0.5rem 1rem;
+}
+
+.catatan-penjual > textarea{
+resize: none;
+width: 19rem;
+height: 4rem;
+padding: 1rem;
+}
+
+.kurir> *{
+    margin: 0.5rem 1rem;
+    display: flex;
+}
+
+.kurir{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.kurir-pilihan-harga{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.kurir-pilihan-harga > select{
+    margin-bottom: 0px;
+}
+
+#kurir-waktu{
+    color: #707070;
+    font-size: 0.7rem;
+    margin-top: 0px;
+}
+
+#kurir-harga{
+    padding: 0rem 4rem;
+}
+
+#garis-pembayaran{
+    margin: 1rem 1rem;
+    width: 92%;
+}
+
+.pembayaran-total{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+#pembayaran-total-angka{
+    color: #C04365;
+    padding-right: 2rem;
+}
+
+#keranjang-container{
+    margin: 2rem;
+}
+
+.kotak-putih{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: white;
+    padding: 0.5rem;
+    font-family: 'WeblySleek UI Semibold';
+    flex-flow: row nowrap;
+}
+
+.kotak-putih > *{
+    margin: 1rem;
+}
+
+.text-merah{
+    color: #C04365;
+    font-size: 1.2rem;
+}
+
+#kotak-tengah{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+#kotak-putih-bawah{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.kotak-putih-kanan{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.akhir-harga{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.akhir-harga > *{
+    margin: 0rem 0.3rem;
+}
+
+#text-kecil{
+    font-size: 0.8rem;
+    color: #707070;
+}
+
+.akhir-harga-button{
+    color: white;
+    background-color: #C04365;
+    padding : 0.5rem;
+    font-size: 1.5rem;
+}
+
+#garis-keranjang{
+    width: 97%;
+}
+
+#akhir-harga-angka{
+    font-size: 1.5rem;
+}

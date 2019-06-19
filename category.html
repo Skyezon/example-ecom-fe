@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Code commerce</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' href='css/slick.css'>
+    <link rel='stylesheet' type='text/css' href='css/slick-theme.css'>
+
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="css/img/Assets/Sample Logo.png" width="194px" height="65px" class="logo">
+        <div class="search">
+            <input id="search-box">
+            <img src="css/img/Assets/magnifier.png" class="icon" id="search-icon">
+        </div>
+
+        <div class="navbar-item shopping-cart-button" class="icon">
+            <div class="cart-icon">
+                <img src="css/img/Assets/Shopping Cart.png" id="cart-icon">
+            </div>
+            <div class="text-navbar">Shopping cart</div>
+        </div>
+
+        <img src="css/img/Assets/Line 2.png" width="3rem" height="45rem">
+        <div class="navbar-item text-navbar">Login</div>
+        <div class="navbar-item">
+            <span class="text-navbar" id="navbar-register">Register</span>
+        </div>
+    </div>
+    <!-- start here -->
+
+    <div class="all-category-container">
+        <span class="heading-category">All Category</span>
+        <div class="category-carosel">
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button" >
+                    <img src="css/img/Assets/laptop.png" class="category-image">
+                    <span class="category-text">Laptop And Accesories</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/laptop.png" class="category-image">
+                    <span class="category-text">Laptop And Accesories</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/make-up.png" class="category-image">
+                    <span class="category-text">Make-up and Cosmetics</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/make-up.png" class="category-image">
+                    <span class="category-text">Make-up and Cosmetics</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/Group 25.png" class="category-image">
+                    <span class="category-text">Woman Fashion</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/Group 25.png" class="category-image">
+                    <span class="category-text">Woman Fashion</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/smartphone Hi-res.png" id="img-hp" class="category-image">
+                    <span class="category-text">Phone and Accesories</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/smartphone Hi-res.png" id="img-hp" class="category-image">
+                    <span class="category-text">Phone and Accesories</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/laptop.png" class="category-image">
+                    <span class="category-text">Laptop and Accesories</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/laptop.png" class="category-image">
+                    <span class="category-text">Laptop and Accesories</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/make-up.png" class="category-image">
+                    <span class="category-text">Make-up and Cosmetics</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/make-up.png" class="category-image">
+                    <span class="category-text">Make-up and Cosmetics</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/Group 25.png" class="category-image">
+                    <span class="category-text">Woman Fashion</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/Group 25.png" class="category-image">
+                    <span class="category-text">Woman Fashion</span>
+                </div>
+            </div>
+            <div class="category-carosel-item">
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/smartphone Hi-res.png" id="img-hp" class="category-image">
+                    <span class="category-text">Phone and Accesories</span>
+                </div>
+                <div class="category-carosel-item-button">
+                    <img src="css/img/Assets/smartphone Hi-res.png" id="img-hp" class="category-image">
+                    <span class="category-text">Phone and Accesories</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-change">
+        <div class="category-head" id="categorypage-heading">
+            Laptop and Accesories
+        </div>
+        <div class="carosel-background">
+            <div class="carosel-pilihan">
+                <span class="carosel-pilihan-button">Colling Pad</span>
+                <span class="carosel-pilihan-button">Laptop Asus</span>
+                <span class="carosel-pilihan-button">Flash Disk</span>
+                <span class="carosel-pilihan-button">Keyboard</span>
+                <span class="carosel-pilihan-button">Mouse</span>
+                <span class="carosel-pilihan-button">Charger</span>
+                <span class="carosel-pilihan-button">Hardisk</span>
+                <span class="carosel-pilihan-button">Baterai</span>
+            </div>
+        </div>
+        <div class="barang-change">
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kartu-container" id="recomendation-kartu">
+                <img src="css/img/Assets/Sample Item.png" class="kartu-img">
+                <div class="kartu-desc">
+                    <div class="kartu-desc-top">
+                        <span class="kartu-judul">Laptop Accessories USB Colling Ventilation Radiator 15.6</span>
+                        <span class="kartu-harga">Rp150.000</span>
+                    </div>
+                    <div class="kartu-desc-down">
+                        <span class="kartu-store">PC ACC Store</span>
+                        <div class="kartu-star">
+                            <img src="css/img/RawIcon/star.svg" class="img-star">
+                            <span class="kartu-angka">4.3(23)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <span id="last">Show More</span>
+
+    </div>
+
+
+    <!-- end here -->
+    <div class="footer">
+        <div class="footer-left">
+            <div class="sejak">
+                <span class="sejak-text">Code &copy; Sejak 2013</span>
+            </div>
+            <div class="bantuan">
+                <span class="bantuan-text">Bantuan - Tentang Kami</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="ikuti">
+                <span class="ikuti-text">Ikuti Kami di:</span>
+            </div>
+            <div class="ikuti-gambar">
+                <img src="css/img/Assets/facebook.png"> </span>
+                <img src="css/img/Assets/instagram.png"> </span>
+                <img src="css/img/Assets/twitter.png"> </span>
+                <img src="css/img/Assets/google-plus.png"> </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

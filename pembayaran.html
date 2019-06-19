@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Code commerce</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' href='css/slick.css'>
+    <link rel='stylesheet' type='text/css' href='css/slick-theme.css'>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="css/img/Assets/Sample Logo.png" width="194px" height="65px" class="logo">
+        <div class="search">
+            <input id="search-box">
+            <img src="css/img/Assets/magnifier.png" class="icon" id="search-icon">
+        </div>
+
+        <div class="navbar-item shopping-cart-button" class="icon">
+            <div class="cart-icon">
+                <img src="css/img/Assets/Shopping Cart.png" id="cart-icon">
+            </div>
+            <div class="text-navbar">Shopping cart</div>
+        </div>
+
+        <img src="css/img/Assets/Line 2.png" width="3rem" height="45rem">
+        <div class="navbar-item text-navbar">Login</div>
+        <div class="navbar-item">
+            <span class="text-navbar" id="navbar-register">Register</span>
+        </div>
+    </div>
+    <!-- start here -->
+
+    <div class="pembayaran-container">
+        <div class="pembayaran-left">
+            <div class="alamat-pengiriman-container">
+                <span class="alamat-pengiriman-heading">Alamat Pengiriman</span>
+                <div class="alamat-pengiriman-body">
+                    <div class="alamat-pengiriman-body-left">
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Provinsi</label>
+                            <select>
+                                <option></option>
+                                <option>Jakarta</option>
+                                <option>Jawa barat</option>
+                            </select>
+                        </div>
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Kota</label>
+                            <select>
+                                <option></option>
+                                <option>Jakarta Utara</option>
+                                <option>Lembang</option>
+                                <option>Bandung</option>
+                            </select>
+                        </div>
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Kecamatan</label>
+                            <select>
+                                <option></option>
+                                <option>Kebon Jeruk</option>
+                                <option>Palmerah</option>
+                                <option>Kalideres</option>
+                            </select>
+                        </div>
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Kelurahan</label>
+                            <select>
+                                <option></option>
+                                <option>Kapuk</option>
+                                <option>Cengkareng Barat</option>
+                                <option>Cengkareng Timur</option>
+                            </select>
+                        </div>
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Kode Pos</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="alamat-pengiriman-body-right">
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Nama Lengkap</label>
+                            <input type="text">
+                        </div>
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Nomor Telepon</label>
+                            <input type="tel">
+                        </div>
+                        <div class="alamat-pengiriman-dropdown">
+                            <label>Alamat </label>
+                            <textarea id="alamat-textarea"></textarea>
+                        </div>
+                        <div class="alamat-pengiriman-button">
+                            <input type="submit" value="Simpan" class="alamat-pengiriman-tombol">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="alamat-pengiriman-container" id="detail">
+                <span class="alamat-pengiriman-heading">Detail Belanja</span>
+                <span class="detail-abu">PC ACC Store</span>
+                <div class="detail-jumlah">
+                    <div class="detail-jumlah-img"><img src="css/img/Assets/Sample Item.png"> </div>
+                    <div class="detail-jumlah-kanan">
+                        <div class="detail-jumlah-text">
+                            <span class="detail-jumlah-judul">Laptop Accessories USB Colling Ventilation Radiator
+                                15.6</span>
+                            <span class="detail-jumlah-harga">Rp150.000</span>
+                        </div>
+                        <div class="detail-jumlah-angka">
+                            <span id="minus"><img src="css/img/Assets/Minus.png"> </span>
+                            <span id="angka-value">1</span>
+                            <span id="plus"><img src="css/img/Assets/Plus.png"> </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catatan-penjual">
+                    <span>Catatan untuk Penjual</span>
+                    <textarea></textarea>
+                </div>
+                <div class="kurir">
+                    <span id="kurir-heading">Kurir</span>
+                    <div class="kurir-pilihan-harga">
+                        <select>
+                            <option>JNE Reguler</option>
+                            <option>J&T</option>
+                            <option>Tiki</option>
+                        </select>
+                        <span id="kurir-harga">Rp1.000</span>
+                    </div>
+                    <span id="kurir-waktu">Akan diterima pada tanggal 3 Juni - 6 Juni</span>
+                </div>
+                <hr class="garis" id="garis-pembayaran">
+                <div class="pembayaran-total">
+                    <span id="pembayaran-total-heading">Total Pesanan</span>
+                    <span id="pembayaran-total-angka">Rp151.000</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pembayaran-right">
+            <span id="total-heading" class="alamat-pengiriman-heading">Ringkasan Belanja</span>
+            <span id="kode-voucher">Kode Voucher</span>
+            <div class="total-semua">
+                <div class="total-harga">
+                    <span>Total Harga Barang</span>
+                    <span>Rp150.000</span>
+                </div>
+                <div class="total-pengiriman">
+                    <span>Total Harga Pengiriman</span>
+                    <span>Rp1.000</span>
+                </div>
+            </div>
+            <hr class="garis">
+            <div class="total">
+                <span class="total-text">Total</span>
+                <span class="total-angka">Rp151.000</span>
+            </div>
+            <div class="total-button">
+                Pilih Metode Pembayaran
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- end here -->
+    <div class="footer">
+        <div class="footer-left">
+            <div class="sejak">
+                <span class="sejak-text">Code &copy; Sejak 2013</span>
+            </div>
+            <div class="bantuan">
+                <span class="bantuan-text">Bantuan - Tentang Kami</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="ikuti">
+                <span class="ikuti-text">Ikuti Kami di:</span>
+            </div>
+            <div class="ikuti-gambar">
+                <img src="css/img/Assets/facebook.png"> </img>
+                <img src="css/img/Assets/instagram.png"> </label>
+                <img src="css/img/Assets/twitter.png"> </span>
+                <img src="css/img/Assets/google-plus.png"> </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
