@@ -9,7 +9,7 @@
 //   console.log(`Server running on ${PORT}/`);
 // });
 
-next dari internet
+// next dari internet
 
 var express = require('express');
 var app = express();
