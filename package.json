@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Skyezon/fave-code-ecommerce/issues"
   },
-  "homepage": "https://github.com/Skyezon/fave-code-ecommerce#readme"
+  "homepage": "https://github.com/Skyezon/fave-code-ecommerce#readme",
+  "dependencies": {
+    "ejs": "^3.0.1"
+  }
 }
