@@ -1,0 +1,19 @@
+{
+  "name": "fave-code-ecommerce",
+  "version": "1.0.0",
+  "description": "testing-fave",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyezon/fave-code-ecommerce.git"
+  },
+  "author": "Delbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skyezon/fave-code-ecommerce/issues"
+  },
+  "homepage": "https://github.com/Skyezon/fave-code-ecommerce#readme"
+}
